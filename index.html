@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="estilo/styles.css">
+    <link rel="stylesheet" href="estilo/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!--<header>
+        <div class="topo">
+            <div class="">
+                <img class="logo" src="imagem/74472.png">
+            </div>
+            <nav class="opcoes">
+                <ul>
+                    <li><a href=""> Inicio </a></li>
+                    <li><a href=""> Clientes </a></li>
+                    <li><a href="fornecedores.html"> Fornecedores </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><img class="logo" src="imagem/user.webp"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#meumenu" aria-controls="meumenu" aria-expanded="false" aria-label="Menu Exemplo">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="meumenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Fornecedores</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="container">
+        <h1>Cadastro de Fornecedor</h1>
+        <p>Cadastrar um fornecedor e mantenha seus dados atualizados</p>
+        <hr>
+        <form>
+            <div class="row">
+                <div class="form-group col-4">
+                    <label for="">CNPJ: *</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-3">
+                    <label for="">Razão Social: *</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-5">
+                    <label for="">Nome Fantasia: *</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col-2">
+                    <label for="">Inscrição Estadual: *</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-3">
+                    <label for="">Atividade Econômica: *</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-3">
+                    <label for="">Situação: *</label>
+                    <select class="form-control">
+                        <option value="">--Selecionar--</option>
+                        <option value="1">Ativa</option>
+                        <option value="2">Inativa</option>
+                    </select>
+                </div>
+                <div class="form-group col-4">
+                    <label for="">Responsável: *</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="row">
+                <div class="form-group col-4">
+                    <label for="">CEP: *</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-5">
+                    <label for="">Logradouro: *</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-3">
+                    <label for="">Número: *</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col-4">
+                    <label for="">Bairro: *</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-3">
+                    <label for="">Estado: *</label>
+                    <select class="form-control">
+                        <option value="">--Selecionar--</option>
+                        <option value="1">RO</option>
+                        <option value="2">AC</option>
+                        <option value="3">AM</option>
+                    </select>
+                </div>
+                <div class="form-group col-5">
+                    <label for="">Cidade: *</label>
+                    <select class="form-control">
+                        <option value="">--Selecionar--</option>
+                        <option value="1">Ji-Paraná</option>
+                        <option value="2">Ouro Preto do Oeste</option>
+                        <option value="3">Presidente Médici</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <div class="row">
+                <div class="form-group col-4">
+                    <label for="">Contato 1: *</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-4">
+                    <label for="">Contato 2:</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-4">
+                    <label for="">Contato 3:</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group col-6">
+                    <label for="">Email 1: *</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group col-6">
+                    <label for="">Email 2:</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="form-group">
+                    <button type="cancel" class="btn btn-danger">Cancelar
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                    <button type="submit" class="btn btn-success">Salvar
+                        <i class="bi bi-save"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
